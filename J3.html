@@ -1,0 +1,107 @@
+[1:40 PM] Ritik Chapagain
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Javascript</title>
+</head>
+<body>
+
+
+<div id="">
+<h1 id="show">Name</h1>
+<form name="ans-frm">
+<p><input type="radio" id="first" name="ans" /><label for="first" id="first-opt"></label></p>
+<p><input type="radio" id="second" name="ans" /><label for="second" id="second-opt"></label></p>
+<p><input type="radio" id="third" name="ans" /><label for="third" id="third-opt"></label></p>
+<p><input type="radio" id="fourth" name="ans" /><label for="fourth" id="fourth-opt"></label></p>
+</form>
+<p>
+<!-- <button type="button" onclick="onPrev()">Prev</button> -->
+<button type="button" onclick="onNext()">Next</button>
+</p>
+</div>
+<script>
+var questions = ['What is the capital city of Nepal?',
+'What is the Height of Mt. Everest?',
+'Who is the first prime minister of Nepal?',
+'What is the longest river of Nepal?'];
+var answers = [['Pokhara', 'Kathmandu', 'Nepalgunj', 'Ilam'],
+['8848m', '8488m', '8848.86m', '8850m'],
+['BP Koirala', 'Girija Pd. Koiraala', 'Sher Bd. Deuwa', 'Bhimsen Thapa'],
+['Karnali', 'Koshi', 'Narayani', 'Trishuli']];
+var user_answers = [];
+var correct_answers = ['Kathmandu', '8848.86m', 'Bhimsen Thapa', 'Karnali'];
+
+
+var i = 0;
+
+
+setValue();
+
+
+function onNext()
+{​​​​​​​
+/*
+radios = document.getElementsByName('ans');
+for(j=0; j<4; j++)
+{​​​​​​​
+if(radios[j].checked == true)
+{​​​​​​​
+user_answers[i] = radios[j].value;
+}​​​​​​​
+}​​​​​​​
+*/
+user_answers[i] = document.forms['ans-frm']['ans'].value;
+console.log(user_answers);
+if(i < questions.length - 1)
+{​​​​​​​
+i++;
+}​​​​​​​
+else
+{​​​​​​​
+showResult();
+}​​​​​​​
+setValue();
+}​​​​​​​
+
+
+function onPrev()
+{​​​​​​​
+if(i > 0)
+{​​​​​​​
+i--;
+}​​​​​​​
+setValue();
+}​​​​​​​
+
+
+function setValue()
+{​​​​​​​
+document.getElementById('show').innerHTML = questions[i];
+document.getElementById('first-opt').innerHTML = answers[i][0];
+document.getElementById('second-opt').innerHTML = answers[i][1];
+document.getElementById('third-opt').innerHTML = answers[i][2];
+document.getElementById('fourth-opt').innerHTML = answers[i][3];
+document.getElementById('first').value = answers[i][0];
+document.getElementById('second').value = answers[i][1];
+document.getElementById('third').value = answers[i][2];
+document.getElementById('fourth').value = answers[i][3];
+document.getElementById('first').checked = false;
+document.getElementById('second').checked = false;
+document.getElementById('third').checked = false;
+document.getElementById('fourth').checked = false;
+}​​​​​​​
+
+
+function showResult()
+{​​​​​​​
+//calculate result
+}​​​​​​​
+
+
+</script>
+
+
+</body>
+</html>

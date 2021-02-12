@@ -1,0 +1,138 @@
+[1:52 PM] Ritik Chapagain
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Form</title>
+</head>
+
+<body>
+  <div id="frm-div">
+    <h1 id="test">User Registration Form</h1>
+    <form name="reg-frm">
+      <div class="frm-div">
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter Name" maxlength="5" required>
+      </div>
+      <div class="frm-div">
+        <label>DOB:</label>
+        <input type="date" name="dob" />
+      </div>
+      <div class="frm-div">
+        <label>Address:</label>
+        <input type="text" name="address" placeholder="Enter Address">
+      </div>
+      <div class="frm-div">
+        <label>Phone:</label>
+        <input type="number" name="phone" max="10" min="10" >
+      </div>
+      <div class="frm-div">
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter Name">
+      </div>
+      <div class="frm-div">
+        <label>Website:</label>
+        <input type="url" name="website">
+      </div>
+      <div class="frm-div">
+        <label>Username:</label>
+        <input type="text" name="username" value="abc" readonly>
+      </div>
+      <div class="frm-div">
+        <label>Password:</label>
+        <input type="password" name="password">
+      </div>
+      <div class="frm-div">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" id="male" checked>
+        <label for="male" class="opt-label">Male</label>
+        <input type="radio" name="gender" value="Female" id="female">
+        <label for="female" class="opt-label">Female</label>
+        <input type="radio" name="gender" value="Other" id="other">
+        <label for="other" class="opt-label">Other</label>
+      </div>
+      <div class="frm-div">
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobbies" value="Music">
+        <label class="opt-label">Music</label>
+        <input type="checkbox" name="hobbies" value="Travel">
+        <label class="opt-label">Travel</label>
+        <input type="checkbox" name="hobbies" value="Other" checked>
+        <label class="opt-label">Other</label>
+      </div>
+      <div class="frm-div">
+        <label>Country:</label>
+        <select name="country">
+          <option value="Nepal">Nepal</option>
+          <option value="UK">UK</option>
+          <option value="USA" selected>USA</option>
+          <option value="Australia">Australia</option>
+        </select>
+      </div>
+      <div class="frm-div">
+        <label>Comments:</label>
+        <textarea name="name" rows="4" cols="30">Text goes here</textarea>
+      </div>
+      <div class="frm-div">
+        <label>Rating:</label>
+        <input type="range" name="rating">
+      </div>
+      <div class="frm-div">
+        <label>Image:</label>
+        <input type="file" name="image">
+      </div>
+      <div class="frm-div">
+        <input type="submit" name="register" value="Register">
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+        <button type="button" onclick="showValue()">Click</button>
+      </div>
+    </form>
+  </div>
+  <script>
+    var my_object = [{
+        ​​
+        'name': 'Bibek Ghimire',
+        'sem': '3rd',
+        'CUID': 190165
+      }​​,
+      {
+        ​​
+        'name': 'Bibek Ale',
+        'sem': '3rd',
+        'CUID': 111222
+      }​​,
+      {
+        ​​
+        'name': 'Bibek Khatri',
+        'sem': '3rd',
+        'CUID': 222333
+      }​​,
+      {
+        ​​
+        'name': 'Bivek Rijal',
+        'sem': '3rd',
+        'CUID': 333444
+      }​​
+    ];
+    
+    //alert(my_object[1].CUID);
+    // create required functions & trigger them in required users' actions
+    // select required elements, attributes
+    // change required content, attributes, styles
+    function showValue() {
+      ​​
+      var a = document.forms['reg-frm']['hobbies'].value;
+      alert(a);
+
+      var b =document.getElementById('test').style.textAlign = "center";
+
+
+
+
+    }​​
+
+  </script>
+</body>
+
+</html>

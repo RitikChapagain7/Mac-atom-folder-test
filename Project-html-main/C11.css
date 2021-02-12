@@ -1,0 +1,162 @@
+#main {
+  box-sizing: border-box;
+  border: 2px solid black;
+  height: 500px;
+
+}
+
+
+
+.daraz {
+  position: relative;
+  float: left;
+  width: 20%;
+  margin: 10px auto;
+}
+
+
+
+img {
+  height: 300px;
+  width: 200px;
+  padding: 10px 10px 0px 10px;
+  margin: 20px auto;
+  display: block;
+}
+
+
+
+.name {
+  font-weight: 600;
+  text-align: center;
+}
+
+
+
+.price {
+  color: orange;
+  margin-top: -10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+.discount {
+  margin-top: -15px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+del {
+  color: grey;
+}
+
+
+.hover1{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.8s;
+
+}
+.hover1--blur {
+  backdrop-filter: blur(5px);
+}
+
+.hover1:hover{
+  opacity: 1;
+
+}
+.hover2{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.hover2:hover{
+  opacity: 1;
+}
+.hover3{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.8s;
+
+}
+.hover3:hover{
+  opacity: 1;
+}
+.hover4{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.8s;
+
+}
+.hover4:hover{
+  opacity: 1;
+}
+.hover5{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 77%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.8s;
+
+}
+.hover5:hover{
+  opacity: 1;
+}

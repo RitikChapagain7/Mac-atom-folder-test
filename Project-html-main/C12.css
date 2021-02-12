@@ -1,0 +1,254 @@
+#test
+{​​
+background: url(a.jpg);
+background-repeat: no-repeat;
+background-size: 500px 300px;
+border: 5px solid red;
+height: 300px;
+width: 500px;
+}​​
+
+
+
+#test2
+{​​
+/*
+background: url(a.jpg);
+background: linear-gradient(blue, lightblue);
+background: radial-gradient(blue, lightblue);
+background-repeat: no-repeat;
+background-size: 500px 300px;
+*/
+background: rgba(102, 0, 0, 0.5);
+height: 200px;
+margin: 50px;
+width: 400px;
+}​​
+#test2 h1
+{​​
+color: #fff;
+}​​
+
+
+
+#test3
+{​​
+margin: 20px 0 0 0;
+}​​
+
+
+
+table, th, td
+{​​
+border: 1px solid #000000;
+border-collapse: collapse;
+}​​
+table
+{​​
+width: 500px;
+}​​
+th
+{​​
+background-color: blue;
+color: #fff;
+}​​
+/*
+tr
+{​​
+background-color: pink;
+}​​
+.stripe
+{​​
+background-color: brown;
+}​​
+*/
+
+
+
+#name-add-col
+{​​
+background-color: yellow;
+}​​
+#phone-col
+{​​
+background-color: aqua;
+}​​
+
+
+
+#test4
+{​​
+margin: 50px 0;
+width: 950px;
+}​​
+.product-display
+{​​
+float: left;
+margin: 50px 5px;
+width: 180px;
+}​​
+.product-display:hover
+{​​
+box-shadow: grey 1px 1px 1px;
+}​​
+.product-display img
+{​​
+width: 100%;
+height: 150px;
+}​​
+.product-display h5
+{​​
+font-size: 18px;
+font-weight: 300;
+margin: 0;
+}​​
+.product-display h6
+{​​
+color: orange;
+font-size: 16px;
+font-weight: 100;
+margin: 0;
+}​​
+.product-display p
+{​​
+font-size: 12px;
+font-weight: 100;
+margin: 0;
+}​​
+.product-display p strike
+{​​
+color: grey;
+}​​
+.div-opt
+{​​
+display: none;
+position: relative;
+left: 15px;
+top: -120px;
+}​​
+.div-opt p
+{​​
+background-color: #000;
+color: #fff;
+font-size: 16px;
+margin: 1px;
+padding: 5px 10px;
+}​​
+.product-display:hover .div-opt
+{​​
+display: flex;
+}​​
+
+
+
+
+#pos-ex img
+{​​
+height: 300px;
+width: 500px;
+}​​
+
+
+
+#pos-ex h1
+{​​
+color: red;
+position: absolute;
+top: 10px;
+left: 50px;
+/*
+position: absolute / relative / fixed / static / sticky
+top: 0;
+bottom:0;
+left: 0;
+right: 0;
+display: block / inline / inline-block / none / flex
+*/
+}​​
+
+
+
+#abc
+{​​
+display: flex;
+float: left;
+width: 100%;
+}​​
+
+
+
+.a
+{​​
+background-color: blue;
+margin: 5px;
+height: 300px;
+width: 300px;
+}​​
+
+
+
+.a img
+{​​
+position: sticky;
+z-index: -9999999;
+top: 100px;
+right: 100px;
+bottom: 100px;
+left: 100px;
+}​​
+
+
+
+
+header
+{​​
+background-color: blue;
+height: 300px;
+width: 100%;
+animation-name: my_animation;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}​​
+
+
+
+header img
+{​​
+background-color: blue;
+height: 300px;
+width: 300px;
+/* transform: rotate(60deg); */
+animation-name: my_animation1;
+animation-duration: 2s;
+transition: width 2s;
+}​​
+
+
+
+header img:hover
+{​​
+width: 500px;
+}​​
+
+
+
+@keyframes my_animation
+{​​
+from {​​background-color: red;}​​
+to {​​background-color: green;}​​
+}​​
+
+
+
+@keyframes my_animation1
+{​​
+from {​​width: 300px;}​​
+to {​​width: 500px;}​​
+}​​
+
+
+
+/*
+selector
+grid system
+*/

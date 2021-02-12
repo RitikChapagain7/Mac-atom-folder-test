@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+
+
+</head>
+
+<body>
+
+  <div id="cal">
+  <h1 id="test"</h1>
+
+  <form action="">
+    <p>
+      <label class="lab"  for="">Num 1:</label>
+      <input class="labels lab" type="number" id="num1">
+    </p>
+    <p>
+      <label class="lab" for="">Num 2:</label>
+      <input class="labels lab" type="number" id="num2">
+    </p>
+    <p>
+      <button type="button" class="buttons" onclick="addNumber()">+</button>
+    </p>
+
+    <p>
+      <button type="button" class="buttons" onclick="subtractNumber()">-</button>
+    </p>
+    <p>
+      <button type="button" class="buttons" onclick="divideNumber()">/</button>
+    </p>
+    <p>
+      <button type="button" class="buttons" onclick="multiplyNumber()">*</button>
+    </p>
+  </form>
+
+  <script>
+    var name = 'Ritik';
+    var a = 100;
+    var b = 50;
+
+    function myFunction() {
+      document.getElementById('test').innerHTML = a + b;
+    }
+
+    function myFunction1() {
+      document.getElementById('test').innerHTML = a - b;
+    }
+
+    function myFunction2() {
+      document.getElementById('test').innerHTML = a / b;
+    }
+
+    function myFunction3() {
+      document.getElementById('test').innerHTML = a * b;
+    }
+
+    function addNumber() {
+      var a = document.getElementById('num1').value;
+      var b = document.getElementById('num2').value;
+      alert(Number(a) + Number(b));
+    }
+
+    function subtractNumber() {
+      var a = document.getElementById('num1').value;
+      var b = document.getElementById('num2').value;
+      alert(Number(a) - Number(b));
+    }
+
+    function divideNumber() {
+      var a = document.getElementById('num1').value;
+      var b = document.getElementById('num2').value;
+      alert(Number(a) / Number(b));
+    }
+
+    function multiplyNumber() {
+      var a = document.getElementById('num1').value;
+      var b = document.getElementById('num2').value;
+      alert(Number(a) * Number(b));
+    }
+  </script>
+</div>
+<style media="screen">
+  body{
+    background-color:cyane;
+    position:relative;
+    top:110px;
+    left:400px;
+
+
+
+  }
+  #cal{
+    background: lightblue;
+    width:40%;
+    border-radius: 10%;
+    border: 3px solid black;
+
+
+  }
+
+  .buttons{
+    height: 40px;
+    width: 140px;
+    background:  rgba(150, 170, 220, 0.5);
+    margin-left: 80px;
+    border-radius: 40%;
+    border: 3px solid black;
+  }
+  .labels{
+    height: 30px;
+    width: 140px;
+    border-radius: 4px;
+    border: 2px solid black;
+  }
+
+  .lab{
+    position:relative;
+    left: 80px;
+  }
+
+
+</style>
+
+</body>
+
+</html>

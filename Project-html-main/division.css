@@ -1,0 +1,68 @@
+#A{
+  background-color: blue;
+  height: 110px;
+  width: 100%;
+  float: left;
+}
+#B{
+  background-color: red;
+  height: 60px;
+  width: 100%;
+  float: left;
+}
+#C{
+  background-color: green;
+  height: 150px;
+  width: 100%;
+  float: left;
+}
+#C1{
+  background-color: black;
+  height: 150px;
+  width: 60%;
+}
+
+
+
+#E{
+  background-color: blue;
+  height: 240px;
+  width: 100%;
+  float: left;
+}
+
+#F{
+  background-color: red;
+  height:80px;
+  width: 100%;
+  float: left;
+
+}
+#E1{
+  background-color: grey;
+  height: 200px;
+  width: 27%;
+  float: left;
+  margin: 15px;
+}
+#E2{
+  background-color: grey;
+  height: 200px;
+  width: 27%;
+  float: left;
+  margin: 15px;
+}
+#E3{
+  background-color: grey;
+  height: 200px;
+  width: 27%;
+  float: left;
+  margin: 15px;
+}
+#C2{
+  background-color: blue;
+  height: 240px;
+  width: 100%;
+  float: right;
+
+}

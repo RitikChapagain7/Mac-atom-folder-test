@@ -1,0 +1,72 @@
+/*
+selectors
+----------
+- universal (*) selector
+- tag (h1), id(#) , class(.) selector
+- grouping selector(h1, p, .test)
+- descendant(div p), child selector(div > P)
+- sibling(div ~ p), adjacent sibling(div + p)
+- attribute selector(input[type="submit"] / a[href="home"] / a[target="_blank"])
+- pseudo class selector [a:hover / a:active / a:visited / a:link]
+- pseudo element selector [h1::first-letter / p::first-line / h2:before / h1:after]
+*/
+
+
+
+
+section .frm-div
+{​​
+margin: 10px;
+}​​
+
+section label
+{​​
+float: left;
+width: 100px;
+}​​
+section .opt-label
+{​​
+float: none;
+}​​
+
+
+
+section input, select, textarea
+{​​
+
+/*background-color: blue;
+color: #fff; */
+border: 1px solid gold;
+border-radius: 5px;
+font-size: 20px;
+padding: 0 10px;
+height: 30px;
+width: 300px;
+}​​
+section textarea
+{​​
+height: 200px;
+}​​
+section input[type="radio"], section input[type="checkbox"], section input[type="submit"]
+{​​
+height: auto;
+width: auto;
+}​​
+section input[type="submit"], section button
+{​​
+border: none;
+border-radius: 20px;
+color: #fff;
+background-color: blue;
+font-size: 20px;
+padding: 5px 10px;
+width: 100px;
+}​​
+section button[type="reset"]
+{​​
+background-color: red;
+}​​
+section button[type="button"]
+{​​
+background-color: green;
+}​​

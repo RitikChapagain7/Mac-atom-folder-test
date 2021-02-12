@@ -1,0 +1,118 @@
+.bluebox{
+  box-sizing: border-box;
+
+  width: 100%;
+height:100px;
+background-image: linear-gradient(to right,cornflowerblue,blue);
+
+
+}
+.content{
+  color: #ffffff;
+  float: left;
+  margin-left: 10% ;
+}
+.country{
+  float: right;
+  margin-right: 10%;
+  font-size: 19px;
+}
+.lang{
+  float: right;
+  margin-right: 70px;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-decoration: none;
+
+}
+.lang ul{
+  list-style: none;
+}
+#lang-1{
+display: none;
+background-color: rgba(, 0, 0, 0.6);
+position: absolute;
+margin-left:-40px;
+}
+#lang-0:hover #lang-1{
+display:flex;
+flex-direction: column;
+
+}
+.whitebox {
+  background-color: rgba(150, 170, 220, 0.5);
+  height: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+}
+
+.whitebox ul {
+  list-style: none;
+  /*
+list-style-type: upper-roman;
+list-style-image: url(arrow.png);
+list-style-position: inside;
+*/
+  margin: 0;
+  padding: 0;
+}
+
+.whitebox ul li {
+  float: left;
+  margin: 10px 20px;
+}
+
+.whitebox ul li a {
+  color:black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.whitebox ul li ul {
+  background-color: rgba(150, 170, 220, 0.5);
+  margin-left: -20px;
+  display: none;
+  display:solid block;
+}
+
+.whitebox ul li ul li {
+  float: none;
+  padding: 0;
+}
+
+.whitebox ul li:hover ul {
+  position: fixed;
+  display: block;
+}
+.sidebox   {
+  height: 40px;
+  width: 140px;
+  background-image: linear-gradient(to right ,cornflowerblue,blue);
+  margin-left: 200px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+.hover1{
+  position:absolute;
+  top: 22%
+  left: 0;
+  width: 100%;
+  height: 78%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+}
+.hover1--blur {
+  backdrop-filter: blur(2px);
+}

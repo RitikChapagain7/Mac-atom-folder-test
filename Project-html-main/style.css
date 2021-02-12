@@ -1,0 +1,136 @@
+/*
+Selectors
+---------
+universal(*)
+tag(h1)
+class(.class_name)
+id(#id_name)
+descendant (div p / div p strong)
+first-child (div > p)
+sibling (div ~ div)
+adjascent sibling (div + div)
+attribute (a[href="value"] / input[type="submit"])
+pseudo element selector(::first-letter / ::first-line / ::before / ::after)
+pseudo class selector
+*/
+
+
+
+*
+{​​
+margin: 0;
+padding: 0;
+}​​
+
+
+
+
+ul
+{​​
+list-style: none;
+}​​
+ul li
+{​​
+float: left;
+margin: 0 20px;
+}​​
+ul li a
+{​​
+color: red;
+font-size:20px;
+text-decoration: none;
+}​​
+ul li a.active
+{​​
+background-color: green;
+color: #fff;
+padding: 10px;
+}​​
+ul li ul
+{​​
+display: none;
+position: absolute;
+margin-left: -20px;
+}​​
+ul li ul li
+{​​
+float: none;
+}​​
+ul li ul li ul
+{​​
+margin: -20px 0 0 30px;
+}​​
+
+
+
+ul li:hover > ul
+{​​
+display: block;
+}​​
+
+
+
+
+#main
+{​​
+width: 90%;
+margin: 0 auto;
+}​​
+
+
+
+h1::first-letter
+{​​
+color: Blue;
+}​​
+h1::before
+{​​
+content:url(smiley.jpg);
+}​​
+
+
+
+#p2::after
+{​​
+content: " :Thank you";
+}​​
+
+
+
+h1 + p::first-letter
+{​​
+color: Green;
+font-size: 40px;
+}​​
+
+
+
+h1 + p::first-line
+{​​
+color: red;
+}​​
+
+
+
+#main p:nth-child(2)
+{​​
+background-color: blue;
+}​​
+/*
+a:link
+{​​
+color: green;
+}​​
+a:hover
+{​​
+color: red;
+}​​
+a:visited
+{​​
+color: brown;
+}​​
+a:active
+{​​
+color: yellow;
+}​​
+*/

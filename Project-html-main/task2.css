@@ -1,0 +1,148 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(90deg, #0162c8, #55e7fc);
+  height: 600px;
+}
+
+
+#landing {
+  margin: 0px 0px 0px 200px;
+  position: absolute;
+  left: 70px;
+}
+
+#home {
+  margin-left: 700px;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 20px 10px 20px 10px;
+  margin: 0px 0px 150px 0px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  background: #130C05;
+}
+
+#get {
+  margin: 10px 0px 0px 20px;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+#get:hover{
+border: 2px solid #130C05;
+}
+#form {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  display: block;
+  clear: both;
+  float: right;
+  margin: 0px 430px 0px 0px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 35px #00ABF6;
+}
+
+#sign {
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.gap {
+  margin: 10px 0px 0px 45px;
+  width: 210px;
+  height: 30px;
+  border-radius: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  background: #EAF2F9;
+  border: 1px solid #CADFF0;
+}
+
+#type {
+  width: 218px;
+  height: 35px;
+  padding-left: 80px;
+  background: #EAF2F9;
+}
+
+button {
+  background-color: #10A0EF;
+  color: white;
+  height: 30px;
+  width: 218px;
+  margin: 10px 0px 0px 45px;
+  border: 2px solid #10A0EF;
+  border-radius: 25px;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: blue;
+  border: 2px solid #130C05;
+}
+
+#fly {
+  padding: 180px 0px 0px 300px;
+  color: white;
+}
+
+#p-1 {
+  font-size: 52px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#p-2 {
+  margin: -30px 0px 30px 0px;
+  letter-spacing: 1px;
+}
+
+#p-2 a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  color: #191970;
+}
+
+#p-2 a:hover {
+  color: orange;
+}
+
+#fly-2 {
+  text-decoration: none;
+  color: white;
+  height: 30px;
+  width: 218px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  background-color: #34CB67;
+  padding: 5px;
+  border: 5px solid #34CB66;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+#fly-2:hover {
+  background-color: #130C05;
+  border: 5px solid #130C05;
+}
+#last{
+  background: #F5FFFA;
+  height: 122px;
+  margin-top: 102px;
+}

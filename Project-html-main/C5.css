@@ -1,0 +1,19 @@
+table
+{
+  background-color: white;
+  color:red;
+
+}
+
+button
+{
+  background-color: cyan;
+  border-color: cyan;
+
+}
+
+button:hover
+{
+color: white;
+background-color: black;
+}

@@ -1,0 +1,41 @@
+h1
+{
+font-size: 25px;
+background-color: red;
+}
+p
+{
+  font-size:20px;
+  font-style:italic;
+  font-weight:700;
+  /* text-decoration: line-through; */
+  text-align:right;
+  text-indent: 50px;
+  text-transform: capitalize;
+  word-spacing: 25px;
+  line-height: 30px;
+}
+
+.test
+{
+  color:darkcyan;
+  font-size: 50px;
+  font-family: monospace;
+  text-decoration:underline;
+  text-align: left;
+  letter-spacing: 5px;
+  text-shadow:blue -10px 10px 40px;
+}
+
+#my_par
+{
+font-size: 10px;
+font-style: none;
+word-spacing: none;
+}
+
+a
+{
+  color:red;
+  text-decoration: none;
+}

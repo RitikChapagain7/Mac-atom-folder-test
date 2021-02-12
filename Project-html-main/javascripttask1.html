@@ -1,0 +1,256 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Javascript</title>
+</head>
+<body>
+
+<!--
+<h1 id="test">Heading1</h1>
+<h1 class="my-para" onmouseover="">Heading2</h1>
+<h1 id="test">Heading3</h1>
+<h1 class="my-para">Heading4</h1>
+
+
+
+<p class="my-para">Paragraph1</p>
+<p onmouseout="">Paragraph2</p>
+<p class="my-para">Paragraph3</p>
+<p>Paragraph4</p>
+
+
+
+<input type="text" id="first-name" onkeyup="funName(this.value)" />
+<input type="text" id="last-name" onkeyup="funName(this.value)" />
+
+
+
+<input type="radio" id="male" value="Male" />Male
+<input type="radio" id="female" value="Female" />Female
+<input type="radio" id="other" value="Other" />Other
+<input type="button" value="Click" onclick="" />
+-->
+
+
+
+<div id="my-div">
+
+
+
+<select id="color" onchange="changeStyle('text', this.value)">
+<option value="">Choose a color </option>
+<option value="red">Red</option>
+<option value="blue">Blue</option>
+<option value="green">Green</option>
+<option value="brown">Brown</option>
+<option value="orange">Ornage</option>
+</select>
+
+<select id="bg" onchange="changeStyle('bg', this.value)">
+<option value="">Choose a background </option>
+<option value="red">Red</option>
+<option value="blue">Blue</option>
+<option value="green">Green</option>
+<option value="brown">Brown</option>
+<option value="orange">Ornage</option>
+</select>
+
+<select id="size" onchange="changeStyle('size', this.value)">
+<option value="">Choose Size </option>
+<option value="10px">10px</option>
+<option value="20px">20px</option>
+<option value="30px">30px</option>
+<option value="40px">40px</option>
+<option value="50px">50px</option>
+</select>
+
+<select id="family" onchange="changeStyle('family', this.value)">
+<option value="">Choose Size </option>
+<option value="Arial">Arial</option>
+<option value="Times New Roman">Times New Roman</option>
+<option value="Calibri">Calibri</option>
+<option value="Monotype corsiva">Monotype corsiva</option>
+<option value="Roboto">Roboto</option>
+</select>
+
+
+
+<h1 id="output">
+See Output Here.
+</h1>
+
+
+
+</div>
+
+
+
+<div id="country-div">
+<select id="country">
+
+</select>
+</div>
+
+
+
+
+<script>
+
+
+
+function changeStyle(key, val)
+{​​
+var show = document.getElementById('output');
+switch(key)
+{​​
+case 'text':
+show.style.color = val;
+break;
+
+case 'bg':
+show.style.background = val;
+break;
+
+case 'size':
+show.style.fontSize = val;
+break;
+
+case 'family':
+show.style.fontFamily = val;
+break;
+
+default:
+show.style.background = '#fff';
+show.style.color = '#000';
+}​​
+}​​
+
+
+
+var country_list = ["Afghanistan","Albania","Algeria","Andorra","Angola",
+"Anguilla","Antigua &amp; Barbuda","Argentina","Armenia","Aruba","Australia",
+"Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus",
+"Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia &amp; Herzegovina",
+"Botswana","Brazil","British Virgin Islands","Brunei",
+"Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Cape Verde",
+"Cayman Islands","Chad","Chile","China","Colombia","Congo","Cook Islands",
+"Costa Rica","Cote D Ivoire","Croatia","Cruise Ship","Cuba","Cyprus",
+"Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic",
+"Ecuador","Egypt","El Salvador","Equatorial Guinea","Estonia","Ethiopia",
+"Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia",
+"French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar",
+"Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea",
+"Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland",
+"India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy",
+"Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kuwait",
+"Kyrgyz Republic","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya",
+"Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar",
+"Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius",
+"Mexico","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco",
+"Mozambique","Namibia","Nepal","Netherlands","Netherlands Antilles",
+"New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman",
+"Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru",
+"Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania",
+"Russia","Rwanda","Saint Pierre &amp; Miquelon","Samoa","San Marino","Satellite",
+"Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore",
+"Slovakia","Slovenia","South Africa","South Korea","Spain","Sri Lanka",
+"St Kitts &amp; Nevis","St Lucia","St Vincent","St. Lucia","Sudan","Suriname",
+"Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania",
+"Thailand","Timor L'Este","Togo","Tonga","Trinidad &amp; Tobago","Tunisia",
+"Turkey","Turkmenistan","Turks &amp; Caicos","Uganda","Ukraine",
+"United Arab Emirates","United Kingdom","Uruguay","Uzbekistan","Venezuela",
+"Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+
+
+
+output = '';
+country_list.forEach(countryLoop);
+
+
+
+function countryLoop(item, index)
+{​​
+output +=
+'<option value="'+ item +'">'+ item +'</option>';
+}​​
+
+
+
+document.getElementById('country').innerHTML = output;
+
+
+
+/*
+print methods
+--------------
+alert('Hello');
+document.write('Hello');
+console.log('Hello');
+document.getElementsByTagName('h1')[0].innerHTML = 'Content Print';
+
+
+
+select DOM Objects
+--------------------
+console.log(document.getElementById('test'));
+console.log(document.getElementsByTagName('h1')[0]);
+console.log(document.getElementsByClassName('my-para'));
+
+
+
+actions (user events)
+---------------------
+onmouseover onmouseout onclick onfocus onfocusout onblur
+onkeydown onkeyup onchecked onselected onchange
+
+
+
+what can JS change in HTML Document
+------------------------------------
+content
+DOM
+style
+
+
+
+document.getElementById('test').innerHTML = 'Javascript';
+
+document.getElementById('my-div').innerHTML
+= '<h1>Text Content</h1><p>This is paragraph</p>';
+
+
+
+document.getElementById('test').style.color = 'red';
+
+
+
+*/
+
+
+
+/*
+inputs
+-------
+name
+class
+dob
+subjects & marks
+
+
+
+output
+-------
+marksheet(table layout) with all details, %, grade
+
+
+
+*/
+
+
+
+</script>
+
+
+
+</body>
+</html>
